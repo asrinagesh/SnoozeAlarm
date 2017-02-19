@@ -36,7 +36,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="TbR-9C-Ase" eventType="touchUpInside" id="wpV-7j-7Kl"/>
-                                    <segue destination="P5U-Qb-Enc" kind="show" id="vo5-JY-KAH"/>
+                                    <segue destination="9gb-0C-ATJ" kind="show" id="KUE-hF-jHH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hate sleeping past your alarm?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydn-ho-UUl">
@@ -110,7 +110,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dA-JQ-N5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.98550724637681" y="136.95652173913044"/>
+            <point key="canvasLocation" x="-742" y="137"/>
+        </scene>
+        <!--Terms & Policies-->
+        <scene sceneID="kQk-PP-LlH">
+            <objects>
+                <viewController id="mgr-7Y-cLk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4lp-6C-xqe"/>
+                        <viewControllerLayoutGuide type="bottom" id="GGa-IL-IdZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5W-fd-gJu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLAH BLAH BLAH" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-XG-NNP">
+                                <rect key="frame" x="20" y="190" width="238" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-YW-Jsb">
+                                <rect key="frame" x="115" y="447" width="184" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <segue destination="P5U-Qb-Enc" kind="show" id="jni-2s-CYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms &amp; Policies" id="2K1-wX-SV4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrs-JE-Xdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="136.95652173913044"/>
         </scene>
         <!--Alarms-->
         <scene sceneID="tne-QT-ifu">
@@ -197,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="137"/>
+            <point key="canvasLocation" x="991" y="137"/>
         </scene>
         <!--Add Alarm-->
         <scene sceneID="CHa-AG-HoA">
@@ -252,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svV-Cn-fJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840.5797101449277" y="136.95652173913044"/>
+            <point key="canvasLocation" x="1842" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fr3-ij-0Wc">
@@ -270,7 +307,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4y-Wo-aiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464" y="801"/>
+            <point key="canvasLocation" x="484" y="801"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y8Y-3D-EsZ">
@@ -289,6 +326,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1Z-bg-SRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1381" y="801"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SiV-Va-lK2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9gb-0C-ATJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eTa-lh-fZS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mgr-7Y-cLk" kind="relationship" relationship="rootViewController" id="Djs-Vo-DMU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izs-6t-whr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="801"/>
         </scene>
     </scenes>
 </document>
