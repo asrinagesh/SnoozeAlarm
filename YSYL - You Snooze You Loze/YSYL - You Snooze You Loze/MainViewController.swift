@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import os.log
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let alarmTimes = [6, 12, 8]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
