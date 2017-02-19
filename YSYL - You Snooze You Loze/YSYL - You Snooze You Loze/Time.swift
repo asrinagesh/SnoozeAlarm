@@ -9,24 +9,30 @@
 import Foundation
 
 class Time {
-    var time:Int
+    var totMins:Int
     var isPm = false
 
-    init(time:Int){
-        self.time = time
+    init(mins:Int){
+        self.totMins = mins
     }
     
     func getTime() -> Int{
-        return time
+        return self.totMins
     }
     
     func setTime(newTime:Int){
-        time = newTime
+        self.totMins = newTime
     }
     
     func getHours() -> Int{
-        let hours = time / 60
-        if hours > 12{
+        let hours = self.totMins / 60
+        // If 12am -> 0
+        if hours == 12 && !isPm {
+            return 0
+        }
+        
+        // If at the PM -> minus 12
+        if hours > 12 {
             isPm = true
             return hours - 12
         }
@@ -37,18 +43,18 @@ class Time {
     }
     
     func getMinutes() -> Int{
-        return time % 60
+        return self.totMins % 60
     }
     
     func getIsPm() -> Bool{
         return isPm
     }
     
-    func getTimeInMinutes(hours:Int, minutes:Int) -> Int{
-        return (hours * 60) + minutes
-    }
+//    func getTimeInMinutes(hours:Int, minutes:Int) -> Int{
+//        return (hours * 60) + minutes
+//    }
     
-    func getTimeInHoursMinutes(minutes:Int) -> (hours:Int, minutes:Int) {
+    func getTimeInHoursMinutes() -> (hours:Int, minutes:Int) {
         return (self.getHours(), self.getMinutes())
     }
 }

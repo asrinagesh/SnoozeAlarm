@@ -10,6 +10,7 @@ import UIKit
 
 class AlarmCellTableViewCell: UITableViewCell {
     @IBOutlet var alarmTime: UILabel!
+    @IBOutlet var amPm: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

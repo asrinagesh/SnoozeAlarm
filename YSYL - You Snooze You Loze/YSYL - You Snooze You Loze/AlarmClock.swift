@@ -19,6 +19,10 @@ class AlarmClock {
         nextAlarm = 0
     }
     
+    func getAlarm(index: Int) -> Alarm {
+        return self.alarms[index]
+    }
+    
     func printAlarms(){
         for i in 0...alarms.count-1 {
             let title : String = alarms[i].getTitle()

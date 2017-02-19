@@ -99,6 +99,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="alarmTime" destination="j35-lJ-WBO" id="jSU-J3-QRH"/>
+                                            <outlet property="amPm" destination="leN-L2-FTF" id="8ch-lJ-I8D"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -117,13 +118,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alarms" id="LRq-cz-6KT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Wqy-D8-mEJ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Yh-zE-9Gg">
                             <connections>
                                 <segue destination="Wod-OM-Z3F" kind="show" id="FiA-va-CYl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zlg-lm-3wq" id="HhI-jN-xFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,56 +144,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gvj-m5-gAK">
-                                <rect key="frame" x="0.0" y="64" width="414" height="216"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gvj-m5-gAK">
+                                <rect key="frame" x="0.0" y="72" width="414" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="509165500.63702399">
                                     <!--2017-02-19 02:51:40 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0g-uo-msg">
-                                <rect key="frame" x="122" y="450" width="170" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="All alarms have default snooze options - remember... you snooze you lose!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWI-O1-DG0">
+                                <rect key="frame" x="20" y="296" width="374" height="115"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.49014261744966442" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zAb-7W-ggI">
-                                <rect key="frame" x="0.0" y="288" width="414" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ft6-tM-O7k">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ft6-tM-O7k" id="2LK-D2-ldz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKy-w3-rZa">
-                                                    <rect key="frame" x="25" y="11" width="68" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Never" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-PT-N9E">
-                                                    <rect key="frame" x="338" y="11" width="68" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gvj-m5-gAK" secondAttribute="trailing" id="0zH-DR-uF9"/>
-                            <constraint firstItem="gvj-m5-gAK" firstAttribute="leading" secondItem="kaG-92-5H3" secondAttribute="leading" id="Hws-B8-qN8"/>
-                            <constraint firstItem="gvj-m5-gAK" firstAttribute="top" secondItem="bSk-6k-97M" secondAttribute="bottom" id="ut7-Bx-5yq"/>
+                            <constraint firstItem="gvj-m5-gAK" firstAttribute="top" secondItem="bSk-6k-97M" secondAttribute="bottom" constant="10" id="Ngh-QI-TwH"/>
+                            <constraint firstItem="EWI-O1-DG0" firstAttribute="leading" secondItem="kaG-92-5H3" secondAttribute="leading" id="ePj-3e-YlX"/>
+                            <constraint firstItem="EWI-O1-DG0" firstAttribute="top" secondItem="gvj-m5-gAK" secondAttribute="bottom" constant="5" id="nKg-Qk-kn6"/>
+                            <constraint firstAttribute="trailing" secondItem="gvj-m5-gAK" secondAttribute="trailing" id="pWL-5b-5Pj"/>
+                            <constraint firstItem="gvj-m5-gAK" firstAttribute="leading" secondItem="kaG-92-5H3" secondAttribute="leading" id="qOk-yY-Wnl"/>
+                            <constraint firstAttribute="trailing" secondItem="EWI-O1-DG0" secondAttribute="trailing" id="zuq-4c-8fI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Alarm" id="Nli-8C-tIE">
@@ -201,13 +175,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="hB5-5X-gpy">
                             <connections>
-                                <action selector="saveAlarm:" destination="jpP-Dv-l15" id="gzm-i9-4rh"/>
+                                <action selector="saveAlarm:" destination="jpP-Dv-l15" id="USs-Nv-dH7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="alarmTime" destination="gvj-m5-gAK" id="uTi-fE-OfX"/>
-                        <outlet property="sampleTime" destination="r0g-uo-msg" id="ATq-kD-D3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svV-Cn-fJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
