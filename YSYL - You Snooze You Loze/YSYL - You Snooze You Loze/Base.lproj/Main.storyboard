@@ -54,46 +54,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-lm-3wq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-lm-3wq">
                                 <rect key="frame" x="20" y="81" width="374" height="635"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="c9n-Hx-jpa">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="alarmCell" rowHeight="88" id="c9n-Hx-jpa" customClass="AlarmCellTableViewCell" customModule="YSYL___You_Snooze_You_Loze" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c9n-Hx-jpa" id="ZTP-NA-2NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="87.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j35-lJ-WBO">
-                                                    <rect key="frame" x="24" y="20" width="122" height="47"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="7:50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j35-lJ-WBO">
+                                                    <rect key="frame" x="20" y="15" width="104" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="52"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w24-Gl-z44">
-                                                    <rect key="frame" x="303" y="28" width="51" height="31"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leN-L2-FTF">
+                                                    <rect key="frame" x="144" y="37" width="44" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w24-Gl-z44">
+                                                    <rect key="frame" x="302" y="28" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leN-L2-FTF">
-                                                    <rect key="frame" x="147" y="39" width="40" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="w24-Gl-z44" secondAttribute="trailing" constant="15" id="IV4-TY-yyo"/>
-                                                <constraint firstItem="w24-Gl-z44" firstAttribute="centerY" secondItem="ZTP-NA-2NO" secondAttribute="centerY" id="RTr-hO-j4n"/>
-                                                <constraint firstItem="j35-lJ-WBO" firstAttribute="leading" secondItem="ZTP-NA-2NO" secondAttribute="leading" constant="20" id="dFX-XR-erd"/>
-                                                <constraint firstItem="j35-lJ-WBO" firstAttribute="centerY" secondItem="ZTP-NA-2NO" secondAttribute="centerY" id="dOI-Bx-r0g"/>
-                                                <constraint firstItem="leN-L2-FTF" firstAttribute="bottom" secondItem="j35-lJ-WBO" secondAttribute="bottom" id="duO-gg-w5e"/>
-                                                <constraint firstItem="leN-L2-FTF" firstAttribute="leading" secondItem="j35-lJ-WBO" secondAttribute="trailing" constant="1" id="hEH-AX-pBj"/>
+                                                <constraint firstItem="w24-Gl-z44" firstAttribute="baseline" secondItem="j35-lJ-WBO" secondAttribute="baseline" id="6Xz-cX-iTc"/>
+                                                <constraint firstItem="j35-lJ-WBO" firstAttribute="leading" secondItem="ZTP-NA-2NO" secondAttribute="leadingMargin" constant="10" id="YMN-Zf-FZq"/>
+                                                <constraint firstItem="leN-L2-FTF" firstAttribute="baseline" secondItem="j35-lJ-WBO" secondAttribute="baseline" id="hoW-rd-UrO"/>
+                                                <constraint firstItem="w24-Gl-z44" firstAttribute="centerY" secondItem="ZTP-NA-2NO" secondAttribute="centerY" id="iro-Xa-VVf"/>
+                                                <constraint firstItem="j35-lJ-WBO" firstAttribute="centerY" secondItem="ZTP-NA-2NO" secondAttribute="centerY" id="nEH-kZ-0eQ"/>
+                                                <constraint firstItem="leN-L2-FTF" firstAttribute="leading" secondItem="j35-lJ-WBO" secondAttribute="trailing" constant="1" id="qJ3-W9-Pa8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="w24-Gl-z44" secondAttribute="trailing" constant="10" id="wXk-uF-cQT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alarmTime" destination="j35-lJ-WBO" id="e8t-Kg-P0K"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="LLS-g1-xir"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0mk-iL-H3F"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoB-pn-N7j">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
