@@ -14,7 +14,8 @@
 		7D34C5AC1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5AA1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld */; };
 		7D34C5AE1E58F4F200BDC32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */; };
 		7D34C5B11E58F4F200BDC32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5AF1E58F4F200BDC32B /* LaunchScreen.storyboard */; };
-		7D34C5B91E591D4900BDC32B /* AlarmCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5B81E591D4900BDC32B /* AlarmCellTableViewCell.swift */; };
+		94BDD0F41E591D6800BB103A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDD0F31E591D6800BB103A /* Alarm.swift */; };
+		94BDD0F81E59268200BB103A /* AlarmClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDD0F71E59268200BB103A /* AlarmClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D34C5B01E58F4F200BDC32B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D34C5B21E58F4F200BDC32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D34C5B81E591D4900BDC32B /* AlarmCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCellTableViewCell.swift; sourceTree = "<group>"; };
+		94BDD0F31E591D6800BB103A /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		94BDD0F71E59268200BB103A /* AlarmClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +152,8 @@
 				7D34C5AC1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld in Sources */,
 				7D34C5A61E58F4F200BDC32B /* MainViewController.swift in Sources */,
 				7D34C5A41E58F4F200BDC32B /* AppDelegate.swift in Sources */,
-				7D34C5B91E591D4900BDC32B /* AlarmCellTableViewCell.swift in Sources */,
+				94BDD0F41E591D6800BB103A /* Alarm.swift in Sources */,
+				94BDD0F81E59268200BB103A /* AlarmClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,20 +10,21 @@ import Foundation
 
 class Alarm {
     var enabled:Bool
-    var time:Date
+    var time:Time
     var title:String
     var mediaLable:String
+    var days:[Bool]
     
-    init(time: Date, title:String, mediaLable:String){
+    init(time: Time, title:String, mediaLable:String){
         self.time = time
         enabled = true
         self.title = title
         self.mediaLable = mediaLable
-        
-    }
+        days = [false,false,false,false,false,false,false]
+     }
     
-    func getTime() -> Date{
-        return time
+    func getTime() -> Int{
+        return time.getTime()
     }
     
     func getTitle() -> String{
@@ -40,7 +41,7 @@ class Alarm {
     
     
     
-    func setTime(newTime:Date){
+    func setTime(newTime:Time){
         time = newTime
     }
     
@@ -50,5 +51,9 @@ class Alarm {
     
     func setMedia(newMedia:String){
         mediaLable = newMedia
+    }
+    
+    func enable(){
+        enabled = true;
     }
 }
