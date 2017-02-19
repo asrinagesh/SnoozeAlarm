@@ -13,14 +13,15 @@ class Alarm {
     var time:Date
     var title:String
     var mediaLable:String
+    var days:[Bool]
     
     init(time: Date, title:String, mediaLable:String){
         self.time = time
         enabled = true
         self.title = title
         self.mediaLable = mediaLable
-        
-    }
+        days = [false,false,false,false,false,false,false]
+     }
     
     func getTime() -> Date{
         return time
