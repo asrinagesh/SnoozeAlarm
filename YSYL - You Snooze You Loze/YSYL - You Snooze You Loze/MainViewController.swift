@@ -46,8 +46,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.dataSource = self
-        tableView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +75,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(String(describing: currResult))
                 print("--")
             }
+            userAlarmClocks.wait()
         }
         catch {
             // error
@@ -109,9 +108,32 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    func createAlert (title:String, message:String)
+    {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        //CREATING ON BUTTON
+        alert.addAction(UIAlertAction(title: "SNOOZE", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+            print ("SNOOZE")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "ANSWER", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+            print("ANSWER")
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Snooze Features
+    func showSnooze() {
+        print("running")
     }
 }
 
