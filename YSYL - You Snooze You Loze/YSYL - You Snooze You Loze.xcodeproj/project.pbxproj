@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0746021E593DBB00423F6B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0746011E593DBB00423F6B /* AddViewController.swift */; };
 		7D34C5A41E58F4F200BDC32B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5A31E58F4F200BDC32B /* AppDelegate.swift */; };
-		7D34C5A61E58F4F200BDC32B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5A51E58F4F200BDC32B /* ViewController.swift */; };
+		7D34C5A61E58F4F200BDC32B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5A51E58F4F200BDC32B /* MainViewController.swift */; };
 		7D34C5A91E58F4F200BDC32B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5A71E58F4F200BDC32B /* Main.storyboard */; };
 		7D34C5AC1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5AA1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld */; };
 		7D34C5AE1E58F4F200BDC32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */; };
@@ -17,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0746011E593DBB00423F6B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = ../AddViewController.swift; sourceTree = "<group>"; };
 		7D34C5A01E58F4F200BDC32B /* YSYL - You Snooze You Loze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YSYL - You Snooze You Loze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D34C5A31E58F4F200BDC32B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D34C5A51E58F4F200BDC32B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D34C5A51E58F4F200BDC32B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7D34C5A81E58F4F200BDC32B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D34C5AB1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "YSYL___You_Snooze_You_Loze.xcdatamodel"; sourceTree = "<group>"; };
 		7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +60,9 @@
 		7D34C5A21E58F4F200BDC32B /* YSYL - You Snooze You Loze */ = {
 			isa = PBXGroup;
 			children = (
+				7D0746011E593DBB00423F6B /* AddViewController.swift */,
 				7D34C5A31E58F4F200BDC32B /* AppDelegate.swift */,
-				7D34C5A51E58F4F200BDC32B /* ViewController.swift */,
-				94BDD0F31E591D6800BB103A /* Alarm.swift */,
+				7D34C5A51E58F4F200BDC32B /* MainViewController.swift */,
 				7D34C5A71E58F4F200BDC32B /* Main.storyboard */,
 				7D34C5B81E591D4900BDC32B /* AlarmCellTableViewCell.swift */,
 				7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */,
@@ -144,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0746021E593DBB00423F6B /* AddViewController.swift in Sources */,
 				7D34C5AC1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld in Sources */,
-				7D34C5A61E58F4F200BDC32B /* ViewController.swift in Sources */,
+				7D34C5A61E58F4F200BDC32B /* MainViewController.swift in Sources */,
 				7D34C5A41E58F4F200BDC32B /* AppDelegate.swift in Sources */,
 				7D34C5B91E591D4900BDC32B /* AlarmCellTableViewCell.swift in Sources */,
 			);
