@@ -65,6 +65,7 @@
 				94BDD0F71E59268200BB103A /* AlarmClock.swift */,
 				94BDD0F31E591D6800BB103A /* Alarm.swift */,
 				7D34C5A71E58F4F200BDC32B /* Main.storyboard */,
+				7D34C5B81E591D4900BDC32B /* AlarmCellTableViewCell.swift */,
 				7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */,
 				7D34C5AF1E58F4F200BDC32B /* LaunchScreen.storyboard */,
 				7D34C5B21E58F4F200BDC32B /* Info.plist */,
