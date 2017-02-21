@@ -16,6 +16,7 @@
 		7D34C5AC1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D34C5AA1E58F4F200BDC32B /* YSYL___You_Snooze_You_Loze.xcdatamodeld */; };
 		7D34C5AE1E58F4F200BDC32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */; };
 		7D34C5B11E58F4F200BDC32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D34C5AF1E58F4F200BDC32B /* LaunchScreen.storyboard */; };
+		7D4BAAA51E5C30C900BB71E3 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BAAA41E5C30C900BB71E3 /* DBAlertController.swift */; };
 		7D672D871E59D1B80034919D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D672D861E59D1B80034919D /* LoginViewController.swift */; };
 		7D672D891E59E0140034919D /* img in Resources */ = {isa = PBXBuildFile; fileRef = 7D672D881E59E0140034919D /* img */; };
 		94BDD0F41E591D6800BB103A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BDD0F31E591D6800BB103A /* Alarm.swift */; };
@@ -34,6 +35,7 @@
 		7D34C5AD1E58F4F200BDC32B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D34C5B01E58F4F200BDC32B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D34C5B21E58F4F200BDC32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4BAAA41E5C30C900BB71E3 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
 		7D672D861E59D1B80034919D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D672D881E59E0140034919D /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		94BDD0F31E591D6800BB103A /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				7D0746011E593DBB00423F6B /* AddViewController.swift */,
 				7D34C5A31E58F4F200BDC32B /* AppDelegate.swift */,
 				7D34C5A51E58F4F200BDC32B /* MainViewController.swift */,
+				7D4BAAA41E5C30C900BB71E3 /* DBAlertController.swift */,
 				7D0746051E596EA800423F6B /* Time.swift */,
 				7D0746031E596EA200423F6B /* AlarmCellTableViewCell.swift */,
 				94BDD0F71E59268200BB103A /* AlarmClock.swift */,
@@ -170,6 +173,7 @@
 				7D0746061E596EA800423F6B /* Time.swift in Sources */,
 				7D34C5A41E58F4F200BDC32B /* AppDelegate.swift in Sources */,
 				94BDD0F41E591D6800BB103A /* Alarm.swift in Sources */,
+				7D4BAAA51E5C30C900BB71E3 /* DBAlertController.swift in Sources */,
 				94BDD0F81E59268200BB103A /* AlarmClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

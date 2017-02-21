@@ -14,6 +14,27 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var tableView: UITableView!
     var userAlarmClocks = AlarmClock()
     var userAlarms : [NSManagedObject] = []
+
+    @IBAction func snoozeAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Alarm!", message: "Time to wake up!!!!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Snooze", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Stop", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    // Snooze Features
+    func showSnooze() {
+        let alertController = DBAlertController(title: "DBAlertController", message: "Hello World!", preferredStyle: .alert)
+        
+        print("running")
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alertController.show()
+        print("it worked")
+        //        let alert = UIAlertController(title: "Alarm!", message: "Time to wake up!!!!", preferredStyle: UIAlertControllerStyle.alert)
+        //        alert.addAction(UIAlertAction(title: "Snooze", style: UIAlertActionStyle.default, handler: nil))
+        //        alert.addAction(UIAlertAction(title: "Stop", style: UIAlertActionStyle.default, handler: nil))
+        //        self.present(alert, animated: true, completion: nil)
+        
+    }
     
     // Table View Functions
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -131,9 +152,5 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
-    // Snooze Features
-    func showSnooze() {
-        print("running")
-    }
 }
 

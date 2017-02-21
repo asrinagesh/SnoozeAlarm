@@ -101,9 +101,13 @@ class AlarmClock {
     
     func wait(){
         print("wait")
-        DispatchQueue.global(qos: .background).async {
-            self._wait()
+        // Check if any alarms are going off
+        if !enabled.isEmpty {
+            DispatchQueue.global(qos: .background).async {
+                self._wait()
+            }
         }
+
         print("wait done")
     }
     
@@ -145,7 +149,7 @@ class AlarmClock {
         AudioServicesPlaySystemSound (systemSoundID)
         print("wakeup done")
         
-        presentAlert(message:"Test")
+        MainViewController().showSnooze()
     }
     
     

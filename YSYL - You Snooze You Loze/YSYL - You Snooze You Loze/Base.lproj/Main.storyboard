@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,8 +29,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fr-GI-vDO">
-                                <rect key="frame" x="20" y="471.66666666666663" width="69" height="45.999999999999886"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fr-GI-vDO">
+                                <rect key="frame" x="25" y="452" width="69" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.47450980539999998" green="0.8392156959" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,13 +41,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hate sleeping past your alarm?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydn-ho-UUl">
-                                <rect key="frame" x="20" y="179" width="374" height="27.666666666666657"/>
+                                <rect key="frame" x="20" y="179" width="374" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to stop snoozing and losing." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-e7-RDf">
-                                <rect key="frame" x="20" y="209" width="374" height="27.666666666666657"/>
+                                <rect key="frame" x="20" y="209" width="374" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.48573825503355705" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,25 +58,35 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79l-gW-wrV">
-                                <rect key="frame" x="20" y="336.66666666666669" width="374" height="45"/>
-                                <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79l-gW-wrV">
+                                <rect key="frame" x="20" y="337" width="374" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="A5m-Iz-Uvs"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-Og-ksW">
-                                <rect key="frame" x="20" y="396.66666666666669" width="374" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-Og-ksW">
+                                <rect key="frame" x="20" y="397" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="LUG-hK-LF1"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,24 +135,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLAH BLAH BLAH" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-XG-NNP">
-                                <rect key="frame" x="20" y="190" width="238" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-XG-NNP">
+                                <rect key="frame" x="10" y="98" width="394" height="265"/>
+                                <string key="text">THE CLIENT WHO SIGNIFIES HIS ACCEPTANCE OF A MONEY DOES SO ON BEHALF OF HIMSELF AND PERSONS UNDER HIS SNOOZING WHICH MEANS THAT ALL ARE BOUND BY THE SLEEPY CONDITIONS AS IF THEY HAD INDIVIDUALLY MADE THE APPLICATION THEMSELVES. ALL DREAMERS ARE MADE WITH TRAVEL YOU SNOOZE YOU LOSE AND NO PERSON HAS ANY AUTHORITY ON ITS BEHALF TO VARY ANY OF THE TERMS AND CONDITIONS WHICH ARE APPLICABLE. THANK YOU.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-YW-Jsb">
-                                <rect key="frame" x="115" y="447" width="184" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-YW-Jsb">
+                                <rect key="frame" x="115" y="457" width="184" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="start"/>
+                                <state key="normal" title="I Accept"/>
                                 <connections>
                                     <segue destination="P5U-Qb-Enc" kind="show" id="jni-2s-CYd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21134635809999999" green="0.22320884469999999" blue="0.24399471280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tBV-XG-NNP" firstAttribute="leading" secondItem="B5W-fd-gJu" secondAttribute="leading" constant="10" id="6ix-JU-Cca"/>
+                            <constraint firstItem="iM6-YW-Jsb" firstAttribute="centerX" secondItem="B5W-fd-gJu" secondAttribute="centerX" id="DAK-Za-cz9"/>
+                            <constraint firstItem="iM6-YW-Jsb" firstAttribute="top" secondItem="tBV-XG-NNP" secondAttribute="bottom" constant="80" id="UH0-Ph-fEb"/>
+                            <constraint firstItem="tBV-XG-NNP" firstAttribute="top" secondItem="4lp-6C-xqe" secondAttribute="bottom" constant="25" id="b1w-l3-ULl"/>
+                            <constraint firstAttribute="trailing" secondItem="tBV-XG-NNP" secondAttribute="trailing" constant="10" id="f6m-a3-ped"/>
+                            <constraint firstItem="GGa-IL-IdZ" firstAttribute="top" secondItem="tBV-XG-NNP" secondAttribute="bottom" constant="260" id="zr2-7M-rop"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Policies" id="2K1-wX-SV4"/>
                 </viewController>
@@ -222,11 +240,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alarms" id="LRq-cz-6KT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Yh-zE-9Gg">
-                            <connections>
-                                <segue destination="Wod-OM-Z3F" kind="show" id="FiA-va-CYl"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="9Yh-zE-9Gg">
+                                <connections>
+                                    <segue destination="Wod-OM-Z3F" kind="show" id="FiA-va-CYl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title=" " id="Bhc-YE-QIQ">
+                                <connections>
+                                    <action selector="snoozeAction:" destination="BYZ-38-t0r" id="wuM-YE-SUK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="zlg-lm-3wq" id="HhI-jN-xFF"/>
